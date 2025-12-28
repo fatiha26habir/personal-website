@@ -1,0 +1,286 @@
+<html>
+<head>
+    <title>Sabrina's Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="sab_icon.png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --green: #2f4f3e;
+            --dark: #1c1c1c;
+            --cream: #f6efdf;
+            --yellow: #f5b642;
+            --orange: #f28c28;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--cream);
+            color: #222;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* ================= HEADER / HERO ================= */
+        header {
+            background: var(--green);
+            color: #fff;
+            padding: 40px 60px 120px;
+            position: relative;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-weight: 600;
+            font-size: 20px;
+        }
+
+        .nav-links a {
+            margin-left: 30px;
+            font-size: 14px;
+        }
+
+        .btn {
+            background: var(--yellow);
+            color: #000;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        .hero {
+            display: grid;
+            grid-template-columns: 2fr 2fr;
+            align-items: center;
+            margin-top: 80px;
+            gap: 40px;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 60px;
+            font-weight: 600;
+            line-height: 1.0;
+        }
+
+        .hero p {
+            margin-top: 20px;
+            font-size: 15px;
+            max-width: 400px;
+            opacity: 0.9;
+        }
+
+        .hero img {
+            width: 80%;
+            height: 300px;
+            border-radius:8px;
+            box-shadow:0 12px 28px rgba(0,0,0,.2);
+            background: #8c5a3c; /* placeholder */
+        }
+
+        .scroll {
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--yellow);
+            color: #000;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 17px;
+            font-weight: 500;
+        }
+
+        /* ================= ABOUT ================= */
+        section {
+            padding: 100px 60px;
+        }
+
+        .about {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 40px;
+        }
+        .about h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 35px;
+        }
+
+        .about p {
+            margin: 20px 0;
+            max-width: 480px;
+            font-size: 14px;
+            line-height: 2;
+        }
+
+
+
+        /* ================= EDUCATION & EXPERIENCE ================= */
+        .two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+
+        h4 {
+            font-family: 'Playfair Display', serif;
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            margin-bottom: 25px;
+        }
+
+        .title {
+            font-weight: 500;
+            margin-top: 5px;
+        }
+
+        .experience {
+            background: var(--yellow);
+            padding: 40px;
+        }
+
+        /* ================= FOOTER ================= */
+        footer {
+            background: var(--green);
+            color: #fff;
+            padding: 40px;
+            text-align: center;
+            padding: 40px;
+            font-size: 12px;
+            opacity: 0.7;
+        }
+
+        /* ================= RESPONSIVE ================= */
+        @media (max-width: 900px) {
+            .hero, .about, .two-col {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 64px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">Sabrina &#9825;</div>
+        <div class="nav-links">
+            <a href="sab_index.html">About</a>
+            <a href="sab_achievements.html">Achievements</a>
+            <a href="sab_education.html">Education</a>
+            <a href="sab_gallery.html">Gallery</a>
+            <a href="sab_contact.html" class="btn">Contact</a>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <div>
+            <center>
+            <h1>Hey There!</h1>
+            <p>Welcome to Sabrina's website. She is Sabrina, quiet, observant, and perfectly happy in her own little world.She’s not the biggest fan of people, but she is the biggest fan of good music.You’ll usually find her with headphones on, escaping into songs instead of conversations.</p>
+        </center>
+        </div>
+        <img src="sabwi.jpeg" alt="sabrina">
+        <div class="hero-img"></div>
+    </div>
+
+    <div class="scroll">Scroll<br>down</div>
+</header>
+
+<section class="about">
+    <div>
+            <h2>Hello,<br>This is Sabrina's website!</h2>
+            <p>
+                ♥ Name : Sabrina Binti Wira
+                <br>♥ Date of Birth : 14th October 2005
+                <br>♥ Age : 20 years old
+                <br>♥ Born in Sibu, Sarawak and rised in Samarahan
+                <br>♥ Currently studying at UITM Samarahan, in diploma level
+                <br>♥ Course : Office Technology and Management.<br>
+                <br>♥ She ia calm and easygoing person, enjoys doing things at her own pace and finds
+                comfort in music and quiet moments. This website is a small glimpse into who she is and
+                what she’s learning along the way ✨
+            </p>
+    </div>
+
+    <div>
+        <center>
+            <h3 class="fw-bold">One of her Favorite Music Video</h3>
+            <p class="lead"><a href="https://youtu.be/UuV2BmJ1p_I?si=M3zwiWubovqLGe6f" target="_blank">Watch the official Music video ((MV) ZICO(지코) _ Any song(아무노래)) on YouTube!</p>
+
+              <div style="width: 200%; max-width: 600px; margin: auto;">
+                <video width="840" height="360" controls autoplay muted loop style="border-radius:15px; width:100%; height:auto;">
+                  <source src="(MV) ZICO.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+        </center>
+    </div>
+</section>
+
+
+<section class="two-col">
+    <div>
+        <h4>A little bit about her &#9825;</h4>
+        <div class="card">
+            <div class="title">&#9829; She is the youngest of three siblings, and all of them are girls!
+                <br>&#9829; Right now, she further her study at UiTM Samarahan in the field<br>of Office Technology and Management.</div>
+        </div>
+    </div>
+
+    <div class="experience">
+        <h4>Things she likes &#9825;</h4>
+        <div class="card">
+            <div class="title">&#9829; She loves writing novels during her free time and she is very into anime.
+                <br>&#9829; In the future, her goal is to become a Marketing Executive.
+                <br>&#9829; She has a cat named "Asip".
+                <br>&#9829; Her favorite quote is: "A good follower is a good leader".</div>
+        </div>
+    </div>
+</section>
+
+<footer>
+        <p><i class="fa-solid fa-heart"></i>© 2025 Sabrina – Personal Website</p>
+        <p><i class="fa-solid fa-heart"></i> Created with love for Sabrina</p>
+        <p><i class="fa-solid fa-heart"></i> this website is required to fulfill IMD318 individual project</p>
+        </footer>
+<center><script type="text/javascript">
+document.write("Current Date is <b>"+Date()+"</b>");
+</script></center>
+
+</body>
+</html>

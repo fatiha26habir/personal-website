@@ -1,0 +1,222 @@
+<html>
+<head>
+    <title>Sabrina's Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="sab_icon.png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+<style>
+    :root {
+      --green: #2f4f3e;
+      --dark: #1c1c1c;
+      --cream: #f6efdf;
+      --yellow: #f5b642;
+      --orange: #f28c28;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--cream);
+      color: #222;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* ================= NAVBAR ================= */
+    header {
+      background: var(--green);
+      color: #fff;
+      padding: 30px 60px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-weight: 600;
+      font-size: 20px;
+    }
+
+    .nav-links a {
+      margin-left: 30px;
+      font-size: 14px;
+    }
+
+    .btn {
+      background: var(--yellow);
+      color: #000;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    /* PAGE TITLE */
+    .page-title {
+      text-align: center;
+      padding: 70px 20px 40px;
+    }
+
+    .page-title h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 54px;
+      margin: 0;
+    }
+
+    .page-title p {
+      max-width: 600px;
+      margin: 14px auto 0;
+      color: #555;
+    }
+
+    /* CONTACT SECTION */
+    .contact-wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 50px;
+      max-width: 1000px;
+      margin: 0 auto 100px;
+      padding: 0 40px;
+    }
+
+    .contact-card {
+      background: #FFFFFF;
+      border-radius: 16px;
+      padding: 40px 30px;
+      text-align: center;
+      box-shadow: 0 18px 40px rgba(0,0,0,0.2);
+      transition: all 0.35s ease;
+    cursor: pointer;
+    }
+
+    .contact-card:hover {
+      transform: translateY(-14px);
+      box-shadow: 0 30px 60px rgba(0,0,0,0.3);
+    }
+
+    .icon {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      margin: 0 auto 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      color: #fff;
+    }
+
+    .email { background: #F2994A; }
+    .instagram { background: #F2C94C; }
+    .phone { background: #2F4F3E; }
+
+    .contact-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .contact-card a {
+      color: #2F4F3E;
+      text-decoration: none;
+      font-weight: 500;
+      word-break: break-all;
+    }
+
+    .contact-card p {
+      font-size: 14px;
+      color: #666;
+      margin-top: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      font-size: 12px;
+      opacity: 0.6;
+    }
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .contact-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .page-title h1 { font-size: 42px; }
+}
+```
+
+  </style>
+</head>
+<body>
+<header>
+  <nav>
+        <div class="logo">Sabrina &#9825;</div>
+        <div class="nav-links">
+            <a href="sab_index.html">About</a>
+            <a href="sab_achievements.html">Achievements</a>
+            <a href="sab_education.html">Education</a>
+            <a href="sab_gallery.html">Gallery</a>
+            <a href="sab_contact.html" class="btn">Conatct</a>
+        </div>
+    </nav>
+</header>
+  <div class="page-title">
+    <h1>Get In Touch with sabrina</h1>
+    <p>If you’d like to collaborate, ask a question, or just say hello to Sabrina, feel free to reach out!</p>
+  </div>
+
+  <section class="contact-wrapper">
+
+<div class="contact-card">
+  <div class="icon email">@</div>
+  <h3>Email</h3>
+  <a href="mailto:sabrinawira01@gmail.com">sabrinawira01@gmail.com</a>
+  <p>Send her an email anytime</p>
+</div>
+
+<div class="contact-card">
+  <div class="icon instagram">📸</div>
+  <h3>Instagram</h3>
+  <a href="https://www.instagram.com/sam_yang_bonara/" target="_blank">@sam_yang_bonara</a>
+  <p>Follow her creative journey</p>
+</div>
+
+<div class="contact-card">
+  <div class="icon phone">📞</div>
+  <h3>Phone</h3>
+  <a href="tel:+60173560956">+60 17-853 0956</a>
+  <p>Available during working hours</p>
+</div>
+
+  </section>
+<footer>
+        <p><i class="fa-solid fa-heart"></i>© 2025 Sabrina – Personal Website</p>
+        <p><i class="fa-solid fa-heart"></i> Created with love for Sabrina</p>
+        <p><i class="fa-solid fa-heart"></i> this website is required to fulfill IMD318 individual project</p>
+        </footer>
+<center><script type="text/javascript">
+document.write("Current Date is <b>"+Date()+"</b>");
+</script></center>
+
+</body>
+</html>

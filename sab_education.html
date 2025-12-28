@@ -1,0 +1,262 @@
+<html>
+<head>
+    <title>Sabrina's Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="sab_icon.png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --green: #2f4f3e;
+            --dark: #1c1c1c;
+            --cream: #f6efdf;
+            --yellow: #f5b642;
+            --orange: #f28c28;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--cream);
+            color: #222;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* ================= NAVBAR ================= */
+        header {
+            background: var(--green);
+            color: #fff;
+            padding: 30px 60px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-weight: 600;
+            font-size: 20px;
+        }
+
+        .nav-links a {
+            margin-left: 30px;
+            font-size: 14px;
+        }
+
+        .btn {
+            background: var(--yellow);
+            color: #000;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        /* ================= PAGE TITLE ================= */
+        .page-title {
+            padding: 80px 60px 40px;
+        }
+
+        .page-title h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 50px;
+        }
+
+        .page-title p {
+            margin-top: 10px;
+            font-size: 17px;
+            max-width: 500px;
+            opacity: 0.8;
+        }
+
+        /* ================= EDUCATION ================= */
+        .education {
+            padding: 40px 60px 120px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+
+        .education-box {
+            background: #fff;
+            padding: 40px;
+            min-height: 260px;
+            border-radius: 16px;
+            position: relative;
+            transition: all 0.35s ease;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+            cursor: pointer;
+        }
+
+        .education-box:hover {
+            transform: translateY(-12px) scale(1.02);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.25);
+        }
+
+        .education-box::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 6px;
+            border-radius: 16px 16px 0 0;
+        }
+
+        .primary::before {
+            background: var(--orange);
+        }
+
+        .secondary::before {
+            background: var(--yellow);
+        }
+
+        .university::before {
+            background: var(--green);
+        }
+
+        .education-box h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .education-box ul {
+            list-style: none;
+            font-size: 14px;
+            line-height: 1.9;
+        }
+
+        .education-box ul li::before {
+            content: "✦ ";
+            color: var(--orange);
+        }
+
+        /* ================= RESPONSIVE ================= */
+        @media (max-width: 1000px) {
+            .education {
+                grid-template-columns: 1fr;
+            }
+        }
+        /* ================= YEAR / ITEM STYLES ================= */
+        .year {
+            font-size: 13px;
+            font-weight: 600;
+            color: #666;
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        .item {
+            margin-bottom: 14px;
+        }
+
+        .item .title {
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .item .desc {
+            font-size: 13px;
+            opacity: 0.75;
+            line-height: 1.6;
+        }
+
+        footer {
+            background: var(--green);
+            color: #fff;
+            text-align: center;
+            padding: 40px;
+            font-size: 12px;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">Sabrina &#9825;</div>
+        <div class="nav-links">
+            <a href="sab_index.html">About</a>
+            <a href="sab_achievements.html">Achievements</a>
+            <a href="sab_education.html">Education</a>
+            <a href="sab_gallery.html">Gallery</a>
+            <a href="sab_contact.html" class="btn">Contact</a>
+        </div>
+    </nav>
+</header>
+
+
+<section class="page-title">
+    <center><h1>Education🎓</h1>
+    <p>✨Here is Sabrina's education journey!✨</p>
+</center>
+</section>
+
+<section class="education">
+    <!-- Elementary School -->
+    <div class="education-box primary">
+        <h3>Elementary school🎓</h3>
+        <span class="year">2012-2014</span>
+        <div class="item">
+            <div class="title">Sekolah Kebangsaan Sungai Maong Hilir, Kuching</div>
+            <div class="desc">She attended SK Sungai Maong Hilir from grade 1 to grade 3 and then transferred to another school.</div>
+        </div>
+        <span class="year">2015-2017</span>
+        <div class="item">
+            <div class="title">Sekolah Kebangsaan Jalan Muara Tuang, Samarahan</div>
+            <div class="desc">She attended SK Jalan Muara Tuang from grade 4 to grade 6 and finished her UPSR there.</div>
+        </div>
+    </div>
+
+    <!-- Secondary School -->
+    <div class="education-box secondary">
+        <h3>Secondary school🎓</h3>
+            <span class="year">2018-2020</span>
+        <div class="item">
+            <div class="title">Sekolah Menengah Kebangsaan Muara Tuang, Samarahan</div>
+            <div class="desc">She attended SMK Muara Tuang from form 1 to form 3 and then transferred to another school.</div>
+        </div>
+        <span class="year">2021-2022</span>
+        <div class="item">
+            <div class="title">Sekolah Menengah Teknologi Sejingkat, Kuching</div>
+            <div class="desc">She attended SMT Sejingkat from form 4 to form 5 and finished her SPM there</div>
+        </div>
+    </div>
+
+    <!-- University -->
+    <div class="education-box university">
+        <h3>University🎓</h3>
+        <span class="year">2023-2026</span>
+        <div class="item">
+            <div class="title">Universiti Teknology MARA, Samarahan Campus, Sarawak Branch.</div>
+            <div class="desc">She continued her studies to the diploma level and took an Office Management course.</div>
+        </div>
+    </div>
+</section>
+
+<footer>
+        <p><i class="fa-solid fa-heart"></i>© 2025 Sabrina – Personal Website</p>
+        <p><i class="fa-solid fa-heart"></i> Created with love for Sabrina</p>
+        <p><i class="fa-solid fa-heart"></i> this website is required to fulfill IMD318 individual project</p>
+        </footer>
+<center><script type="text/javascript">
+document.write("Current Date is <b>"+Date()+"</b>");
+</script></center>
+
+</body>
+</html>
